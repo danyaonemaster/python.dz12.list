@@ -18,5 +18,5 @@ for list in range(len(array)):
         if j > sum_list / len_array:
             lists.append(str(j))
         else:
-            lists.append("  ")
+            lists.append("_ ")
     print(" ".join(lists))

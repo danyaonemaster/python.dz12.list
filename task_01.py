@@ -14,5 +14,5 @@ for list in range(len(array)):
         if str(j)[0] == "5" or str(j)[1] == "5":
             lists.append(str(j))
         else:
-            lists.append("  ")
+            lists.append("_ ")
     print(" ".join(lists))
