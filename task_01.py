@@ -8,10 +8,11 @@ for list in range(len(array)):
 
 print()
 for list in range(len(array)):
+    lists = []
     line = ""
     for j in array[list]:
         if str(j)[0] == "5" or str(j)[1] == "5":
-            line += f"{j} "
+            lists.append(str(j))
         else:
-            line += "   "
-    print(line)
+            lists.append("  ")
+    print(" ".join(lists))
