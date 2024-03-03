@@ -1,3 +1,7 @@
+def examination(num):
+    return str(num) if str(num).__contains__("5") else "  "
+
+
 import random
 
 array = [[random.randint(10, 99) for i in range(5)] for j in range(5)]
@@ -7,11 +11,7 @@ for list in range(len(array)):
     print(" ".join(metrics))
 
 print()
-for list in range(len(array)):
-    lists = []
-    for j in array[list]:
-        if str(j)[0] == "5" or str(j)[1] == "5":
-            lists.append(str(j))
-        else:
-            lists.append("  ")
+for list in array:
+    lists = [examination(num) for num in list]
+
     print(" ".join(lists))
