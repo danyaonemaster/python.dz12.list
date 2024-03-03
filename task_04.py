@@ -1,7 +1,7 @@
 import random
 
 
-def examination(num: str):
+def comparison(num: str):
     sum = 0
     for index in range(len(num)):
         sum += int(num[index])
@@ -16,5 +16,5 @@ for list in range(len(array)):
 
 print()
 for list in array:
-    lists = [examination(str(num)) for num in list]
+    lists = [comparison(str(num)) for num in list]
     print(" ".join(lists))
