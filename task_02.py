@@ -1,9 +1,5 @@
 import random
 
-def examination(num, aver_arith):
-    return str(num) if num < aver_arith else "  "
-
-
 array = [[random.randint(10, 99) for i in range(5)] for j in range(5)]
 sum_list = 0
 len_array = 0
@@ -20,5 +16,5 @@ average_arithmetic = sum_list / len_array
 
 print()
 for list in array:
-    lists = [ examination(num,average_arithmetic) for num in list]
+    lists = [str(num) if num < average_arithmetic else "  " for num in list]
     print(" ".join(lists))
