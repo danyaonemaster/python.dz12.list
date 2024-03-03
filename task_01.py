@@ -1,8 +1,9 @@
+import random
+
+
 def examination(num):
     return str(num) if str(num).__contains__("5") else "  "
 
-
-import random
 
 array = [[random.randint(10, 99) for i in range(5)] for j in range(5)]
 
