@@ -16,5 +16,6 @@ average_arithmetic = sum_list / len_array
 
 print()
 for list in array:
-    lists = [str(num) if num < average_arithmetic else "  " for num in list]
+    lists = [str(num) if num < average_arithmetic
+             else "  " for num in list]
     print(" ".join(lists))

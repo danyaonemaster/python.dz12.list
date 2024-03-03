@@ -8,6 +8,7 @@ for list in range(len(array)):
 
 print()
 for list in array:
-    lists = [str(num) if str(num).__contains__("5") else "  " for num in list]
+    lists = [str(num) if str(num).__contains__("5") else "  "
+             for num in list]
 
     print(" ".join(lists))
