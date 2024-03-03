@@ -9,11 +9,10 @@ for list in range(len(array)):
 print()
 for list in range(len(array)):
     lists = []
-    line = ""
     for j in array[list]:
         number_str = str(j)
         if (int(number_str[0]) + int(number_str[1])) % 2 == 0:
             lists.append(str(j))
         else:
-            lists.append("_")
+            lists.append("  ")
     print(" ".join(lists))

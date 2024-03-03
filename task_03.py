@@ -9,10 +9,9 @@ for list in range(len(array)):
 print()
 for list in range(len(array)):
     lists = []
-    line = ""
     for j in array[list]:
         if j == "T":
             lists.append(j)
         else:
-            lists.append("_")
+            lists.append("  ")
     print(" ".join(lists))
