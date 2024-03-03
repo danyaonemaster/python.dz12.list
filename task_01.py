@@ -9,10 +9,9 @@ for list in range(len(array)):
 print()
 for list in range(len(array)):
     lists = []
-    line = ""
     for j in array[list]:
         if str(j)[0] == "5" or str(j)[1] == "5":
             lists.append(str(j))
         else:
-            lists.append("_ ")
+            lists.append("  ")
     print(" ".join(lists))
