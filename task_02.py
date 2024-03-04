@@ -4,8 +4,8 @@ array = [[random.randint(10, 99) for i in range(5)] for j in range(5)]
 sum_list = 0
 len_array = 0
 
-for list in range(len(array)):
-    metrics = [str(j) for j in array[list]]
+for index in range(len(array)):
+    metrics = [str(j) for j in array[index]]
     print(" ".join(metrics))
 
 for i in array:
