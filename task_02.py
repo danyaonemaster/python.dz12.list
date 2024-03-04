@@ -13,7 +13,7 @@ for list in array:
 
 average_arithmetic = sum_list / len_array
 
-print()
+print(average_arithmetic)
 for list in array:
     lists = if_else(list, average_arithmetic)
     print(" ".join(lists.average))
