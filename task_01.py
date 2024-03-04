@@ -11,4 +11,4 @@ for list in array:
     lists = [str(num) if str(num).__contains__("5") else "  "
              for num in list]
 
-    print("\U0001f606".join(lists))
+    print(" ".join(lists))
