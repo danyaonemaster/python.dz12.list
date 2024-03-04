@@ -1,3 +1,4 @@
+from cllas import if_else
 import random
 
 array = [[random.randint(10, 99) for i in range(5)] for j in range(5)]
@@ -8,7 +9,5 @@ for index in range(len(array)):
 
 print()
 for list in array:
-    lists = [str(num) if str(num).__contains__("5") else "  "
-             for num in list]
-
-    print(" ".join(lists))
+    lists = if_else(list)
+    print(" ".join(lists.values))
