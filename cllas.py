@@ -9,5 +9,5 @@ class if_else:
         self.average = [str(num) if num > average_or_sum
                         else "  " for num in list]
 
-        self.even = [str(num) if sum(map(int, str(num))) % 2 == 0 else "  "
-                     for num in list]
+        self.sumeven = [str(num) if sum(map(int, str(num))) % 2 == 0 else "  "
+                        for num in list]
