@@ -11,4 +11,4 @@ for index in range(len(array)):
 print()
 for list in array:
     output_sum_even = if_else(list)
-    print(" ".join(output_sum_even.even))
+    print(" ".join(output_sum_even.evensum))

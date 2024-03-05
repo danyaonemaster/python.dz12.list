@@ -1,6 +1,6 @@
 class if_else:
-    def __init__(self, list, average_or_sum=0):
-        self.letters = [letter if letter == "T" else " "
+    def __init__(self, list, average_or_sum=1):
+        self.letters = [chr(letter) if chr(letter) == "T" else " "
                         for letter in list]
 
         self.values = [str(num) if str(num).__contains__("5") else "  "
