@@ -16,4 +16,10 @@ matrix_average = Matrix(array, average_arithmetic)
 
 matrix_average.print_matrix()
 helpers.sep()
+
+for child_list in array:
+    print("  ".join([str(num) if num > average_arithmetic
+                     else "  " for num in child_list]))
+helpers.sep()
+
 matrix_average.get_average()
